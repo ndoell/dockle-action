@@ -20,6 +20,7 @@ runs:
     - '--exit-code=${{ inputs.exit-code }}'
     - '--exit-level=${{ inputs.exit-level }}'
     - '${{ inputs.image }}'
+    - '-f sarif -o dockle-image-results.sarif'
 branding:
   icon: 'search'
   color: 'green'
