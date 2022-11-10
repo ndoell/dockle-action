@@ -17,11 +17,11 @@ runs:
   using: 'docker'
   image: 'docker://goodwithtech/dockle:latest'
   args:
-    - '--exit-code=${{ inputs.exit-code }}'
-    - '--exit-level=${{ inputs.exit-level }}'
+   # - '--exit-code=${{ inputs.exit-code }}'
+   # - '--exit-level=${{ inputs.exit-level }}'
    # - '-f ${{ inputs.format }}'
    # - '-o ${{ inputs.output }}'
-    - '-f json'
+    - '--format sarif'
     - '-o dockle-report.sarif'
     - '${{ inputs.image }}'
 branding:
