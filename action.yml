@@ -19,8 +19,9 @@ runs:
   args:
     - '--exit-code=${{ inputs.exit-code }}'
     - '--exit-level=${{ inputs.exit-level }}'
+    - '-f ${{ inputs.format }}'
+    - '-o ${{ inputs.output }}'
     - '${{ inputs.image }}'
-    - '-f sarif -o dockle-image-results.sarif'
 branding:
   icon: 'search'
   color: 'green'
