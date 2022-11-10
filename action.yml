@@ -21,7 +21,7 @@ runs:
    # - '--exit-level=${{ inputs.exit-level }}'
    # - '-f ${{ inputs.format }}'
    # - '-o ${{ inputs.output }}'
-    - '--format sarif'
+    - '-format sarif'
     - '-o dockle-report.sarif'
     - '${{ inputs.image }}'
 branding:
