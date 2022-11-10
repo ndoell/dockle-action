@@ -19,10 +19,10 @@ runs:
   args:
     - '--exit-code=${{ inputs.exit-code }}'
     - '--exit-level=${{ inputs.exit-level }}'
-   # - '-f ${{ inputs.format }}'
-   # - '-o ${{ inputs.output }}'
-    - '-f sarif'
-    - '-o dockle-report.sarif'
+    - '-f ${{ inputs.format }}'
+    - '-o ${{ inputs.output }}'
+   # - '-f sarif'
+   # - '-o dockle-report.sarif'
     - '${{ inputs.image }}'
 branding:
   icon: 'search'
